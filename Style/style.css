@@ -1,0 +1,111 @@
+/* Font */
+@font-face {
+    font-family : pokemonTitle;
+    src: url(../Font/Pocket\ Monk.otf);
+}
+@font-face {
+    font-family : pokemonFont;
+    src: url(../Font/PokemonGb-RAeo.ttf);
+}
+
+/* Variables */
+:root {
+    --font-color-pokemon: #ffcc01;
+    --border-color-pokemon : #385ca9;
+}
+
+/* Elements */
+*, :after, :after {
+    margin:0; padding:0;
+    color:white;
+    font-family: pokemonFont;
+}
+
+body{
+    box-sizing: border-box;
+    background: black;
+}
+
+header {
+    margin-top: 2rem;
+}
+
+h1 {
+    font-family: pokemonTitle;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: var(--font-color-pokemon);
+    margin-bottom: 3rem;
+}
+
+main, footer {
+    display:grid;
+    place-items: center;
+}
+
+/* Class */
+.container {
+    width:80%;
+    margin:0 auto;
+    text-align:center;
+    display:grid;
+    grid-template-rows: 0.7fr 1fr 1fr;
+    height: 100vh;
+}
+
+.mot, .tirets {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.mot span {
+    opacity: 0;
+    margin : 0 0.3rem;position:relative;
+}
+
+.tiret {
+    width: 2rem;
+    height:0.2rem;
+    position: relative;
+    top: 27px;
+    left: -36px;
+    background:white;
+    margin : 0.5rem 0.2rem;
+}
+
+.gameboy {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clavier {
+    display: grid;
+    grid-auto-rows: 4rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.clavier span {
+    padding:1rem;
+    background: rgba(192, 192, 192, 0.3);
+    border-radius: 10%;
+    margin: 0 -0.4rem;
+}
+
+.azerty {
+    margin-right: 1.7rem;
+}
+
+.wxcv {
+    margin-right: 14rem;
+}
+
+/* Evenements */
+.clavier span:hover {
+    background: rgba(192, 192, 192, 0.7);
+    cursor: pointer;
+}
