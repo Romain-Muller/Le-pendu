@@ -1,157 +1,172 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/style.css">
-    <title>Le pendu | Projet Passerelle #1</title>
-</head>
-<body>
-    <div class="container">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Style/style.css" />
+		<title>Le pendu | Projet Passerelle #1</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Le jeux du pendu - Version Pokémon</h1>
+				<div class="mot"></div>
+			</header>
 
-        <header>
-            <h1>Le jeux du pendu - Version Pokémon</h1>
-            <div class="mot"></div>
-        </header>
+			<div class="regles">
+				<p>
+					Bienvenue dans le pendu version Pokemon !
+					<br />
+					<br />
+					Toi le jeune dresseur innocent qui rêve de partir de chez ta
+					maman depuis temps d'années...
+					<br />
+					<br />
+					À peine parti de ton village que tu te retrouve nez à nez
+					avec un Mewtwo niveau 70 !
+					<br />
+					<br />
+					Le combat s'annonce rude alors réfléchit bien et prend ton
+					temps pour le battre.
+				</p>
+				<br />
+				<br />
+				<p>
+					Contrôles :
+					<br />
+					<br />
+					Si tu penses avoir trouvé le bont mot, appuis sur "select"
+					et écrit le mot à l'aide ton clavier puis valide avec le
+					bouton 'A'.
+					<br />
+					<br />
+					La musique te gène ? Appuis sur le bouton 'B'.
+					<br />
+					<br />
+					Si tu souhaite recommencer clique sur le bouton 'start'.
+				</p>
+				<br />
+				<br />
+				<p>
+					Règles :
+					<br />
+					<br />
+					Tu as 7 coups pour trouver le mot du pendu. Autrement dit,
+					ton Salameche n'a que 7 points de vie avant de tomber KO.
+					<br />
+					<br />
+					Attention :
+					<br />
+					Il y a des noms propres. Si le mot que tu proposes en est
+					un, pense à mettre en majuscule sa première lettre !
+					<br />
+					<br />
+					Tu ne pensais quand même pas que battre Mewtwo serait si
+					facile ! :)
+					<br />
+					<br />
+					Bon courage jeune dresseur...
+				</p>
+				<br />
+				<div class="commencer">Commencer le combat</div>
+			</div>
 
-        <div class="regles">
-            <p>
-                Bienvenue dans le pendu version Pokemon !
-                <br>
-                <br>
-                Toi le jeune dresseur innocent qui rêve de partir de chez ta maman depuis temps d'années...
-                <br>
-                <br>
-                À peine parti de ton village que tu te retrouve nez à nez avec un Mewtwo niveau 70 !
-                <br>
-                <br>
-                Le combat s'annonce rude alors réfléchit bien et prend ton temps pour le battre.
-            </p>
-            <br>
-            <br>
-            <p>
-                Contrôles :
-                <br>
-                <br>
-                Si tu penses avoir trouvé le bont mot, appuis sur "select" et écrit le mot à l'aide ton clavier puis valide avec le bouton 'A'.
-                <br>
-                <br>
-                La musique te gène ? Appuis sur le bouton 'B'.
-                <br>
-                <br>
-                Si tu souhaite recommencer clique sur le bouton 'start'.
-            </p>
-            <br>
-            <br>
-            <p>
-                Règles : 
-                <br>
-                <br>
-                Tu as 7 coups pour trouver le mot du pendu. Autrement dit, ton Salameche n'a que 7 points de vie avant de tomber KO.
-                <br>
-                <br>
-                Attention :
-                <br>
-                Il y a des noms propres. Si le mot que tu proposes en est un, pense à mettre en majuscule sa première lettre !
-                <br>
-                <br>
-                Tu ne pensais quand même pas que battre Mewtwo serait si facile ! :) 
-                <br>
-                <br>
-                Bon courage jeune dresseur...
-            </p>
-            <br>
-            <div class="commencer">Commencer le combat</div>
-        </div>
-        
-        <main>
-            <div class="gameboy">
-                
-                <img src="Img/gameboy_advance.jpg" alt="gameboy" class="gameboy">
-                <div class="debutCombat">
-                    <div class="screen">
-                        <div class="reload">
-                            <div class="center">
-                                <p>
-                                    Recommencer ?
-                                </p>
-                                <span class="oui">oui</span>
-                                <span> - </span>
-                                <span class="non">non</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="grid-button">
-                    <div class="start" title="Recommencer ?"></div>
-                    <div class="select" title="Proposer un mot."></div>
-                    <div class="dialogue">
-                        <textarea class="word show"></textarea>
-                        <div class="informations">
-                            Vas-y Salameche ! 
-                            <br>
-                            Go !
-                        </div>
-                    </div>
-                    <div class="button A" title="Confirmer le mot proposer."></div>
-                    <div class="button B" title="Stoper la musique.">
-                        <audio src="Music/Combat.mp3" class="battleMusic"></audio>
-                        <audio src="Music/Victoire.mp3" class="victoryMusic"></audio>
-                    </div>
-                    <div class="vieSalameche">
-                        <div class="vie"></div>
-                        <div class="vie"></div>
-                        <div class="vie"></div>
-                        <div class="vie"></div>
-                        <div class="vie"></div>
-                        <div class="vie"></div>
-                        <div class="vie"></div>
-                    </div>
-                    <div class="vieMewtwo"></div>
-                </div>
-            </div>
-        </main>
+			<main>
+				<div class="gameboy">
+					<img
+						src="Img/gameboy_advance.jpg"
+						alt="gameboy"
+						class="gameboy"
+					/>
+					<div class="debutCombat">
+						<div class="screen">
+							<div class="reload">
+								<div class="center">
+									<p>Recommencer ?</p>
+									<span class="oui">oui</span>
+									<span> - </span>
+									<span class="non">non</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-button">
+						<div class="start" title="Recommencer ?"></div>
+						<div class="select" title="Proposer un mot."></div>
+						<div class="dialogue">
+							<textarea class="word show"></textarea>
+							<div class="informations">
+								Vas-y Salameche !
+								<br />
+								Go !
+							</div>
+						</div>
+						<div
+							class="button A"
+							title="Confirmer le mot proposer."
+						></div>
+						<div class="button B" title="Stoper la musique.">
+							<audio
+								src="Music/Combat.mp3"
+								class="battleMusic"
+							></audio>
+							<audio
+								src="Music/Victoire.mp3"
+								class="victoryMusic"
+							></audio>
+						</div>
+						<div class="vieSalameche">
+							<div class="vie"></div>
+							<div class="vie"></div>
+							<div class="vie"></div>
+							<div class="vie"></div>
+							<div class="vie"></div>
+							<div class="vie"></div>
+							<div class="vie"></div>
+						</div>
+						<div class="vieMewtwo"></div>
+					</div>
+				</div>
+			</main>
 
-        <footer>
-            <div class="clavier">
-                <div class="azerty">
-                    <span>a</span>
-                    <span>z</span>
-                    <span>e</span>
-                    <span>r</span>
-                    <span>t</span>
-                    <span>y</span>
-                    <span>u</span>
-                    <span>i</span>
-                    <span>o</span>
-                    <span>p</span>
-                </div>
-                <div class="qsdf">
-                    <span>q</span>
-                    <span>s</span>
-                    <span>d</span>
-                    <span>f</span>
-                    <span>g</span>
-                    <span>h</span>
-                    <span>j</span>
-                    <span>k</span>
-                    <span>l</span>
-                    <span>m</span>
-                </div>
-                <div class="wxcv">
-                    <span>w</span>
-                    <span>x</span>
-                    <span>c</span>
-                    <span>v</span>
-                    <span>b</span>
-                    <span>n</span>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-    <script src="defaut.js"></script>
-</body>
+			<footer>
+				<div class="clavier">
+					<div class="azerty">
+						<span>a</span>
+						<span>z</span>
+						<span>e</span>
+						<span>r</span>
+						<span>t</span>
+						<span>y</span>
+						<span>u</span>
+						<span>i</span>
+						<span>o</span>
+						<span>p</span>
+					</div>
+					<div class="qsdf">
+						<span>q</span>
+						<span>s</span>
+						<span>d</span>
+						<span>f</span>
+						<span>g</span>
+						<span>h</span>
+						<span>j</span>
+						<span>k</span>
+						<span>l</span>
+						<span>m</span>
+					</div>
+					<div class="wxcv">
+						<span>w</span>
+						<span>x</span>
+						<span>c</span>
+						<span>v</span>
+						<span>b</span>
+						<span>n</span>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="defaut.js"></script>
+	</body>
 </html>
